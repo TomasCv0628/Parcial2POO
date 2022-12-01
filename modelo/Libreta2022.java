@@ -2,7 +2,7 @@ package modelo;
 
 import javax.swing.JOptionPane;
 
-public class Libreta2022 extends Banco
+public class Libreta2022 extends Cuentas
 {
     public double saldo;
     public double intereses;
@@ -26,9 +26,7 @@ public class Libreta2022 extends Banco
     public double retirar()
     {
         double x = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el saldo que desea retirar: "));
-        double z = (saldo - x);
-        saldo = saldo - z -(z * 0.02);
-
+        saldo = saldo - (x - x*0.02);
         return saldo;
     }
 
@@ -36,5 +34,9 @@ public class Libreta2022 extends Banco
     {
         intereses = (saldo * 0.08);
         return intereses;
+    }
+    public String toString()
+    {
+        return("Saldo: " + saldo + "\nIntereses: " + intereses);
     }
 }

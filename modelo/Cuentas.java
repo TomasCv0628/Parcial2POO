@@ -1,6 +1,6 @@
 package modelo;
 
-public abstract class Banco
+public abstract class Cuentas
 {
 
     public abstract void depositar();

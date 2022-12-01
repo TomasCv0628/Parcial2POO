@@ -2,7 +2,7 @@ package modelo;
 
 import javax.swing.JOptionPane;
 
-public class Ahorros extends Banco
+public class Ahorros extends Cuentas
 {
     public double saldo;
     public double intereses;
@@ -35,5 +35,9 @@ public class Ahorros extends Banco
     {
         intereses = (saldo * 0.04);
         return intereses;
+    }
+    public String toString()
+    {
+        return("Saldo: " + saldo + "\nIntereses: " + intereses);
     }
 }

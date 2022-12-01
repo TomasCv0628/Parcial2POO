@@ -73,7 +73,7 @@ public class PanelEntradaDatos extends JPanel
         
     
         cbCuenta = new JComboBox<>();
-        cbCuenta.setBounds(150,100,190,20);
+        cbCuenta.setBounds(10,100,190,20);
         this.add(cbCuenta);
 
         cbCuenta.addItem("Corriente");

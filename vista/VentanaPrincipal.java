@@ -10,6 +10,7 @@ public class VentanaPrincipal extends JFrame
     public PanelEntradaDatos miPanelEntrada;
     public PanelOperaciones miPanelOperacion;
     public PanelResultados miPanelResultado;
+    public DialogoCrear miDialogoCrear;
 
     //---------------------------
     // Metodos
@@ -38,12 +39,16 @@ public class VentanaPrincipal extends JFrame
         this.add(miPanelResultado);
         
         // Caracteristicas de la ventana
-        this.setTitle("CasoBiblioteca");
+        this.setTitle("Parcial 2");
         this.setSize(558,532);
         //this.setLocation(100,100);
         this.setLocationRelativeTo(null);;
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setResizable(false);
         this.setVisible(true);
+    }
+    public void crearDialogoCrear() 
+    {
+        miDialogoCrear = new DialogoCrear();
     }
 }

@@ -17,6 +17,8 @@ public class PanelOperaciones extends JPanel
     public JButton btRetirarSaldo;
     public JButton btBorrar;
     public JButton btSalir;
+    public JButton btCrear;
+
 
     //----------------------
     //Metodos
@@ -30,15 +32,20 @@ public class PanelOperaciones extends JPanel
         setBackground(Color.gray);
         
         //Creación y adicion de los botones
-        btAgregarSaldo = new JButton("Crear libro");
+        btAgregarSaldo = new JButton("Depositar");
         btAgregarSaldo.setBounds(5,22,100,40);
-        btAgregarSaldo.setActionCommand("crearLibro");
+        btAgregarSaldo.setActionCommand("agregarSaldo");
         this.add(btAgregarSaldo);
 
-        btRetirarSaldo = new JButton("Crear Coleccion");
+        btRetirarSaldo = new JButton("Retirar");
         btRetirarSaldo.setBounds(110,22,100,40);
-        btRetirarSaldo.setActionCommand("crearColeccion");
+        btRetirarSaldo.setActionCommand("RetirarSaldo");
         this.add(btRetirarSaldo);
+
+        btCrear = new JButton("Crear");
+        btCrear.setBounds(215,22,100,40);
+        btCrear.setActionCommand("crear");
+        this.add(btCrear);
 
         btBorrar = new JButton("Borrar");
         btBorrar.setBounds(320,22,100,40);
