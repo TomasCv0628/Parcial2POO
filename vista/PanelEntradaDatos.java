@@ -3,7 +3,7 @@ package vista;
 import javax.swing.JPanel;
 import java.awt.Color;
 import java.awt.Font;
-
+import javax.swing.JComboBox;
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
@@ -19,6 +19,7 @@ public class PanelEntradaDatos extends JPanel
     private JLabel lbIntereses;
     private JLabel lbRetirar;
     private JLabel lbAgregarSaldo;
+    public JComboBox cbCuenta;
     private static javax.swing.JTextField tfAgregarSaldo;
     private static javax.swing.JTextField tfRetirarSaldo;
 
@@ -69,6 +70,15 @@ public class PanelEntradaDatos extends JPanel
         tfRetirarSaldo.setForeground(Color.BLACK);
         tfRetirarSaldo.setBounds(330,145,190,25);
         this.add(tfRetirarSaldo);
+        
+    
+        cbCuenta = new JComboBox<>();
+        cbCuenta.setBounds(150,100,190,20);
+        this.add(cbCuenta);
+
+        cbCuenta.addItem("Corriente");
+        cbCuenta.addItem("Ahorros");
+        cbCuenta.addItem("Libreta2022");
 
         //Borde y titulo
          TitledBorder borde = BorderFactory.createTitledBorder("Datos Entrada");
